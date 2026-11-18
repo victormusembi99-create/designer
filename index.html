@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Independent graphic design studio creating bold identities, digital experiences and visual stories for ambitious brands.">
+<title>FORMA — Graphic Design Studio</title>
+<style>
+:root{--ink:#171717;--paper:#f4f1eb;--lime:#d7ff64;--muted:#77766f;--line:#d9d5cc;--orange:#ff704b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:25px;font-weight:950;letter-spacing:-1.8px}.brand span{color:#8a9f38}.nav{display:flex;gap:32px;font-size:13px;font-weight:700}.nav a:hover{opacity:.55}.menu{display:none;border:0;background:none;font-size:25px}
+.hero{padding:88px 0 72px;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:end}.eyebrow{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:800;color:var(--muted)}h1{font-size:clamp(58px,9vw,112px);line-height:.88;letter-spacing:-8px;margin:26px 0 30px;font-weight:950;max-width:800px}h1 em{font-style:normal;color:#8a9f38}.hero-copy{font-size:17px;line-height:1.65;color:#5e5d57;max-width:360px;margin-bottom:26px}.pill{display:inline-flex;align-items:center;gap:15px;background:var(--ink);color:white;border-radius:50px;padding:15px 21px;font-size:12px;font-weight:800;transition:.2s}.pill:hover{background:#8a9f38;transform:translateY(-2px)}.pill b{font-size:18px}
+.hero-art{height:350px;background:var(--lime);position:relative;overflow:hidden;border-radius:3px}.hero-art .orb{position:absolute;width:260px;height:260px;border-radius:50%;background:var(--orange);left:50%;top:50%;transform:translate(-50%,-50%);box-shadow:35px 25px 0 #171717}.hero-art .ring{position:absolute;border:2px solid #171717;border-radius:50%;width:340px;height:110px;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-35deg)}.hero-art .ring.two{transform:translate(-50%,-50%) rotate(35deg)}.hero-art strong{position:absolute;bottom:18px;left:20px;font-size:12px;letter-spacing:2px}
+.section{padding:90px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}.section h2{font-size:clamp(38px,5vw,62px);letter-spacing:-3px;line-height:.95;margin:12px 0 0}.section-note{color:var(--muted);font-size:13px;max-width:240px;line-height:1.6}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.project{min-width:0}.project-art{height:330px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}.project:nth-child(1) .project-art{background:#ed6b4c}.project:nth-child(2) .project-art{background:#c8d5ed}.project:nth-child(3) .project-art{background:#e2d7c3}.project:nth-child(4) .project-art{background:#222}.project-art .poster{width:190px;height:245px;background:#f5e8d4;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:950;font-size:42px;line-height:.85;letter-spacing:-3px;transform:rotate(-7deg);box-shadow:15px 18px 0 #171717}.project:nth-child(2) .poster{background:#f25f48;color:#f8e8d8;transform:rotate(8deg);border-radius:100px 100px 0 0}.project:nth-child(3) .poster{background:#20251f;color:#e8dcbe;transform:rotate(4deg);font-size:34px}.project:nth-child(4) .poster{background:#d7ff64;color:#171717;transform:rotate(-5deg);border-radius:50%;font-size:30px}.project-meta{display:flex;justify-content:space-between;gap:15px;padding:16px 2px 5px}.project-meta h3{font-size:18px;margin:0 0 5px}.project-meta p{font-size:12px;color:var(--muted);margin:0}.project-meta span{font-size:11px;color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}.about p{font-size:19px;line-height:1.7;margin:0;color:#55544f}.stats{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:35px}.stat{border-top:1px solid var(--line);padding-top:15px}.stat strong{font-size:38px;letter-spacing:-2px}.stat span{display:block;font-size:11px;color:var(--muted);margin-top:5px;text-transform:uppercase;letter-spacing:1px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:0}.service{padding:26px 25px 26px 0;border-top:1px solid var(--line)}.service+.service{padding-left:25px;border-left:1px solid var(--line)}.service small{color:#8a9f38;font-weight:900}.service h3{font-size:23px;letter-spacing:-1px;margin:25px 0 10px}.service p{font-size:13px;color:var(--muted);line-height:1.7;max-width:270px}
+.contact{background:var(--ink);color:var(--paper);padding:85px 0}.contact .eyebrow{color:#b9b8af}.contact h2{font-size:clamp(48px,8vw,94px);line-height:.9;letter-spacing:-6px;max-width:800px;margin:22px 0 35px}.contact h2 em{font-style:normal;color:var(--lime)}.contact-row{display:flex;justify-content:space-between;align-items:center;gap:25px;border-top:1px solid #444;padding-top:25px}.contact-row p{color:#aaa;font-size:13px;line-height:1.7}.contact .pill{background:var(--lime);color:var(--ink)}footer{padding:25px 0;display:flex;justify-content:space-between;gap:20px;font-size:11px;color:var(--muted)}.social{display:flex;gap:20px}
+@media(max-width:760px){.wrap{width:min(100% - 34px,560px)}header{height:70px}.menu{display:block}.nav{display:none;position:absolute;z-index:5;top:70px;left:0;right:0;background:var(--paper);padding:24px;flex-direction:column;border-bottom:1px solid var(--line)}.nav.open{display:flex}.hero{padding:60px 0 45px;grid-template-columns:1fr;gap:30px}h1{letter-spacing:-5px}.hero-art{height:270px}.section{padding:65px 0}.section-head{display:block}.section-note{margin-top:18px}.work-grid{grid-template-columns:1fr}.project-art{height:300px}.about{grid-template-columns:1fr;gap:25px}.services{grid-template-columns:1fr}.service,.service+.service{padding:23px 0;border-left:0}.contact{padding:65px 0}.contact h2{letter-spacing:-3px}.contact-row{align-items:flex-start;flex-direction:column}footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="#">FORMA<span>.</span></a>
+  <button class="menu" aria-label="Toggle menu" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+  <nav class="nav"><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#contact">CONTACT</a></nav>
+</header>
+<main>
+<section class="hero">
+ <div><div class="eyebrow">Independent graphic designer · Kenya / Worldwide</div>
+ <h1>Ideas made<br><em>impossible</em><br>to ignore.</h1>
+ <p class="hero-copy">I build bold visual identities and thoughtful design experiences that help brands stand out, connect and grow.</p>
+ <a class="pill" href="#work">EXPLORE MY WORK <b>↘</b></a></div>
+ <div class="hero-art" aria-label="Abstract graphic design artwork"><div class="orb"></div><div class="ring"></div><div class="ring two"></div><strong>THINK BOLD. DESIGN BETTER.</strong></div>
+</section>
+<section class="section" id="work">
+ <div class="section-head"><div><div class="eyebrow">Selected projects · 2024—2026</div><h2>Good work<br>speaks loudly.</h2></div><p class="section-note">A selection of identity, campaign and digital design concepts. Replace these concept pieces with your real client projects.</p></div>
+ <div class="work-grid">
+  <article class="project"><div class="project-art"><div class="poster">FRESH<br>THINKING.</div></div><div class="project-meta"><div><h3>Fresh Thinking</h3><p>Brand identity · Packaging</p></div><span>01 / 04</span></div></article>
+  <article class="project"><div class="project-art"><div class="poster">MAKE<br>NOISE</div></div><div class="project-meta"><div><h3>Make Noise</h3><p>Campaign · Art direction</p></div><span>02 / 04</span></div></article>
+  <article class="project"><div class="project-art"><div class="poster">ROOTED<br>IN NATURE</div></div><div class="project-meta"><div><h3>Rooted</h3><p>Visual identity · Print</p></div><span>03 / 04</span></div></article>
+  <article class="project"><div class="project-art"><div class="poster">NEXT<br>LEVEL.</div></div><div class="project-meta"><div><h3>Next Level</h3><p>Social media · Digital design</p></div><span>04 / 04</span></div></article>
+ </div>
+</section>
+<section class="section about" id="about">
+ <div><div class="eyebrow">A little about me</div><h2>Design with<br>purpose. Built<br>to make a mark.</h2></div>
+ <div><p>I'm an independent graphic designer who turns ideas into clear, memorable visual stories. From the first sketch to the final export, I bring curiosity, craft and strategic thinking to every project.</p><div class="stats"><div class="stat"><strong>01—01</strong><span>Personal attention</span></div><div class="stat"><strong>100%</strong><span>Commitment to craft</span></div></div></div>
+</section>
+<section class="section" id="services">
+ <div class="section-head"><div><div class="eyebrow">What I can do for you</div><h2>Design services.</h2></div><p class="section-note">From a single standout asset to a complete brand system, let's make your next move count.</p></div>
+ <div class="services">
+  <article class="service"><small>01 / IDENTITY</small><h3>Brand identity</h3><p>Logos, visual systems, typography and brand guidelines that give your business a recognisable voice.</p></article>
+  <article class="service"><small>02 / CAMPAIGNS</small><h3>Marketing design</h3><p>Posters, flyers, brochures, banners and campaign visuals designed to get noticed.</p></article>
+  <article class="service"><small>03 / DIGITAL</small><h3>Digital content</h3><p>Social media graphics, advertising creatives and digital assets made for modern platforms.</p></article>
+ </div>
+</section>
+</main>
+</div>
+<section class="contact" id="contact"><div class="wrap"><div class="eyebrow">Have a project in mind?</div><h2>Let's make<br>something <em>matter.</em></h2><div class="contact-row"><p>Available for freelance projects and creative collaborations.<br>Tell me what you're building and let's make it happen.</p><a class="pill" href="mailto:hello@yourname.com">START A PROJECT <b>↗</b></a></div></div></section>
+<div class="wrap"><footer><span>© <span id="year"></span> FORMA STUDIO. ALL RIGHTS RESERVED.</span><div class="social"><a href="#">INSTAGRAM</a><a href="#">BEHANCE</a><a href="#">LINKEDIN</a></div><span>DESIGNED WITH INTENTION.</span></footer></div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
